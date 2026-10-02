@@ -4,6 +4,10 @@
   "private": true,
   "main": "index.js",
   "types": "index.d.ts",
-  "napi": { "binaryName": "poc-shared-texture" },
-  "scripts": { "build": "napi build --platform" }
+  "napi": {
+    "binaryName": "poc-shared-texture"
+  },
+  "scripts": {
+    "build": "node init && napi build --platform"
+  }
 }

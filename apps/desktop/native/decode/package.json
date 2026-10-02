@@ -5,7 +5,11 @@
   "private": true,
   "main": "index.js",
   "types": "index.d.ts",
-  "files": ["index.js", "index.d.ts", "*.node"],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "*.node"
+  ],
   "napi": {
     "binaryName": "weftcut-native-decode"
   },
@@ -13,6 +17,6 @@
     "@napi-rs/cli": "^3.10.5"
   },
   "scripts": {
-    "build": "napi build --platform --release"
+    "build": "node init && napi build --platform --release"
   }
 }
